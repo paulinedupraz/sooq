@@ -80,6 +80,7 @@ label,
 
 /* radios, checkboxes, select */
 
+/*
 .form-radios,
 .form-checkboxes,
 .form-item .option{
@@ -96,6 +97,21 @@ label,
 
 .form-radio{
     margin-right: 4px;
+}
+*/
+
+.form-type-checkbox .option,
+.form-type-radio .option{
+  text-align: left;
+  float: right;
+  width: 260px;
+  margin-top: -7px;
+}
+
+.form-radios,
+.form-checkboxes{
+  width: 300px;
+  float: left;
 }
 
 .form-item select{
