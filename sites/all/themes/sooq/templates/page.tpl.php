@@ -153,5 +153,5 @@
       </div></div> <!-- /.section, /#footer -->
 
  
-      
+    <a href="#" class="alpha-grid-toggle"></a>    
   </div></div> <!-- /#page, /#page-wrapper -->
