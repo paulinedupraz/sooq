@@ -1,0 +1,14 @@
+.show-grid .grid-1:hover, .show-grid .grid-2:hover, 
+.show-grid .grid-3:hover, .show-grid .grid-4:hover,
+.show-grid .grid-5:hover, .show-grid .grid-6:hover, 
+.show-grid .grid-7:hover, .show-grid .grid-8:hover,
+.show-grid .grid-9:hover, .show-grid .grid-10:hover, 
+.show-grid .grid-11:hover, .show-grid .grid-12:hover,
+.show-grid .grid-13:hover, .show-grid .grid-14:hover, 
+.show-grid .grid-15:hover, .show-grid .grid-16:hover,
+.show-grid .grid-17:hover, .show-grid .grid-18:hover, 
+.show-grid .grid-19:hover, .show-grid .grid-21:hover,
+.show-grid .grid-21:hover, .show-grid .grid-22:hover, 
+.show-grid .grid-23:hover, .show-grid .grid-24:hover {
+  background-color: rgba(0, 115, 186, .2);
+}
