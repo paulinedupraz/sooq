@@ -320,7 +320,7 @@ div.error .form-textarea:focus{
   font-size: 12px;
 }
 
-#footer li a:hover {
+#footer li a {
   color: #727272;
 }
 
@@ -328,5 +328,14 @@ div.error .form-textarea:focus{
   color: #555;
 }
 
+#block-block-2{
+  width: 250px;
+  float: right;
+  margin-right: 25px;
+  text-align: right;
+}
 
-
+#block-block-2 a{
+  display: block;
+  float: left;
+}
