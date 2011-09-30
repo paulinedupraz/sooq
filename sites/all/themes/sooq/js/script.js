@@ -27,3 +27,19 @@ var ADAPT_CONFIG = {
 };
 
 
+/**
+ * Show grid
+ */
+
+(function($) {
+  Drupal.behaviors.alphaDebug = {
+    attach: function (context) {
+      $('body', context).once('alpha-debug', function () {
+        $('.alpha-grid-toggle').click(function() {
+          $('body').toggleClass('alpha-grid-debug');
+          return false;
+        });
+      });
+    }
+  };
+})(jQuery);

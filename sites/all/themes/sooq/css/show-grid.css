@@ -1,14 +1,14 @@
-.show-grid .grid-1:hover, .show-grid .grid-2:hover, 
-.show-grid .grid-3:hover, .show-grid .grid-4:hover,
-.show-grid .grid-5:hover, .show-grid .grid-6:hover, 
-.show-grid .grid-7:hover, .show-grid .grid-8:hover,
-.show-grid .grid-9:hover, .show-grid .grid-10:hover, 
-.show-grid .grid-11:hover, .show-grid .grid-12:hover,
-.show-grid .grid-13:hover, .show-grid .grid-14:hover, 
-.show-grid .grid-15:hover, .show-grid .grid-16:hover,
-.show-grid .grid-17:hover, .show-grid .grid-18:hover, 
-.show-grid .grid-19:hover, .show-grid .grid-21:hover,
-.show-grid .grid-21:hover, .show-grid .grid-22:hover, 
-.show-grid .grid-23:hover, .show-grid .grid-24:hover {
+.alpha-grid-debug .grid_1:hover, .alpha-grid-debug .grid_2:hover, 
+.alpha-grid-debug .grid_3:hover, .alpha-grid-debug .grid_4:hover,
+.alpha-grid-debug .grid_5:hover, .alpha-grid-debug .grid_6:hover, 
+.alpha-grid-debug .grid_7:hover, .alpha-grid-debug .grid_8:hover,
+.alpha-grid-debug .grid_9:hover, .alpha-grid-debug .grid_10:hover, 
+.alpha-grid-debug .grid_11:hover, .alpha-grid-debug .grid_12:hover,
+.alpha-grid-debug .grid_13:hover, .alpha-grid-debug .grid_14:hover, 
+.alpha-grid-debug .grid_15:hover, .alpha-grid-debug .grid_16:hover {
   background-color: rgba(0, 115, 186, .2);
+}
+
+.alpha-grid-debug .container_12{
+  background-image: url('../images/alpha-default-wide-12.png');
 }
