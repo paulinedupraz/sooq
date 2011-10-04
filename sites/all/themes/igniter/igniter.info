@@ -30,5 +30,5 @@ stylesheets[all][] = css/show-grid.css
 stylesheets[all][] = css/style.css
 stylesheets[print][] = css/print.css
 
-scripts[] = js/script.js
+scripts[] = js/igniter.js
 scripts[] = js/adapt.js

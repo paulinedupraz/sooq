@@ -1,8 +1,8 @@
 
-
 var ADAPT_CONFIG = {
     // Where is your CSS?
-    //path: Drupal.settings.basePath + Drupal.settings.sooq['pathToTheme'] + '/css/grid12/',
+    //path: Drupal.settings.basePath + Drupal.settings.igniter['pathToTheme'] + '/css/grid12/',
+    //TODO don't hard code that. Sadly drupal.settings are not accessible. So we have to find a trick
     path: 'http://local/sooq/sites/all/themes/igniter/css/grid12/',
 
     // false = Only run once, when page first loads.
@@ -27,16 +27,18 @@ var ADAPT_CONFIG = {
 };
 
 
+
 /**
  * Show grid
  */
-
 (function($) {
-  Drupal.behaviors.alphaDebug = {
+
+  Drupal.behaviors.igniterDebug = {
     attach: function (context) {
-      $('body', context).once('alpha-debug', function () {
-        $('.alpha-grid-toggle').click(function() {
-          $('body').toggleClass('alpha-grid-debug');
+      $('body', context).once('igniter-debug', function () {
+        $('body').append('<a href="#" class="igniter-grid-toggle">' + Drupal.t('Show grid') + '</a>');
+        $('.igniter-grid-toggle').click(function() {
+          $('body').toggleClass('igniter-grid-debug');
           return false;
         });
       });
