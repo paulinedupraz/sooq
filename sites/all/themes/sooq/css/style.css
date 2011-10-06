@@ -16,6 +16,7 @@
 
 .view-announcement .field-price{
   position: absolute;
+  margin-right: 0;
   top: 0;
   right: 0;
   text-align: right;
@@ -36,6 +37,50 @@
   margin-top: -14px;
 }
 
+.view-announcement .field-media div,
+.view-announcement .field-media a,
+.view-announcement .field-media img{
+  width: inherit;
+}
+
+.range_0 .view-announcement .field-price{
+  position: static;
+  text-align: left;
+  font-size: 18px;
+}
+.range_0 .view-announcement .title{
+  float: none;
+}
+.range_0 .view-announcement .created{
+  text-align: left;
+  margin-top: 3px;
+}
+
+.range_1 .view-announcement .title{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.range_1 .view-announcement .field-price{
+  font-size: 15px;
+}
+.range_2 .view-announcement .title{
+  font-size: 16px;
+}
+.range_2 .view-announcement .field-category,
+.range_2 .view-announcement .field-subcategory,
+.range_2 .view-announcement .created{
+  font-size: 14px;
+}
+
+
+.range_3 .view-announcement .title{
+  font-size: 20px;
+}
+.range_3 .view-announcement .field-category,
+.range_3 .view-announcement .field-subcategory,
+.range_3 .view-announcement .created{
+  font-size: 15px;
+}
 
 
 /*----------------FORMS------------------*/
@@ -356,6 +401,14 @@ div.error .form-textarea:focus{
 
 #footer li a:hover {
   color: #555;
+}
+
+.range_0 #footer ul > a{
+  font-size: 20px;
+}
+.range_0 #footer li{
+  font-size: 15px;
+  margin-bottom: 7px;
 }
 
 #block-block-2{

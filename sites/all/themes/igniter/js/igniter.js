@@ -1,4 +1,22 @@
 
+function changeClass(i, width) {
+    // Alias HTML tag.
+    var html = document.documentElement;
+                
+    // Find all instances of range_NUMBER and kill 'em.
+    html.className = html.className.replace(/(\s+)?range_\d/g, '');
+                
+    // Check for valid range.
+    if (i > -1) {
+        // Add class="range_NUMBER"
+        html.className += ' range_' + i;
+    }
+   
+                
+// Note: Not making use of width here, but I'm sure
+// you could think of an interesting way to use it.
+}
+
 var ADAPT_CONFIG = {
     // Where is your CSS?
     //path: Drupal.settings.basePath + Drupal.settings.igniter['pathToTheme'] + '/css/grid12/',
@@ -10,7 +28,7 @@ var ADAPT_CONFIG = {
     dynamic: true,
 
     // Optional callback... myCallback(i, width)
-    // callback: callback,
+    callback: changeClass,
 
     // First range entry is the minimum.
     // Last range entry is the maximum.
@@ -33,15 +51,15 @@ var ADAPT_CONFIG = {
  */
 (function($) {
 
-  Drupal.behaviors.igniterDebug = {
-    attach: function (context) {
-      $('body', context).once('igniter-debug', function () {
-        $('body').append('<a href="#" class="igniter-grid-toggle">' + Drupal.t('Show grid') + '</a>');
-        $('.igniter-grid-toggle').click(function() {
-          $('body').toggleClass('igniter-grid-debug');
-          return false;
-        });
-      });
-    }
-  };
+    Drupal.behaviors.igniterDebug = {
+        attach: function (context) {
+            $('body', context).once('igniter-debug', function () {
+                $('body').append('<a href="#" class="igniter-grid-toggle">' + Drupal.t('Show grid') + '</a>');
+                $('.igniter-grid-toggle').click(function() {
+                    $('body').toggleClass('igniter-grid-debug');
+                    return false;
+                });
+            });
+        }
+    };
 })(jQuery);

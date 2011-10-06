@@ -117,7 +117,7 @@
 
     <div id="main-wrapper"><div id="main" class="clearfix">
 
-        <div id="content" class="column grid_7"><div class="section">
+        <div id="content" class="column grid_9"><div class="section">
             <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
