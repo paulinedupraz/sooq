@@ -68,6 +68,7 @@
  */
 ?>
 
+
 <div id="page-wrapper"><div id="page" class="container_12">
 
     <div id="header"><div class="section clearfix">
@@ -91,7 +92,6 @@
                 </h1>
               <?php endif; ?>
             <?php endif; ?>
-
             <?php if ($site_slogan): ?>
               <div id="site-slogan"><?php print $site_slogan; ?></div>
             <?php endif; ?>
