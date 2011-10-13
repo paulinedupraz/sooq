@@ -115,7 +115,7 @@
 
     <div id="main-wrapper"><div id="main" class="clearfix">
 
-        <div id="content" class="column grid_9"><div class="section">
+        <div id="content" class="column grid_8"><div class="section">
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
             <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -132,7 +132,7 @@
           </div></div> <!-- /.section, /#content -->
 
         <?php if ($page['sidebar_first']): ?>
-          <div id="sidebar-first" class="column sidebar grid_3"><div class="section">
+          <div id="sidebar-first" class="column sidebar grid_4"><div class="section">
               <?php print render($page['sidebar_first']); ?>
             </div></div> <!-- /.section, /#sidebar-first -->
         <?php endif; ?>
