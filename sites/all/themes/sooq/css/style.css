@@ -6,14 +6,19 @@
   clear: both;
 }
 
+
+
 /*---------------NAVIGATION---------------*/
 
 #navigation{
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 #main-menu{
   margin: 40px 10px 0 10px;
+  padding-left: 0;
+  list-style:none;
 }
 
 #main-menu a{
@@ -56,16 +61,16 @@
 }
 .range_0 #main-menu a{
   background: transparent;
-  padding: 6px 21px;
+  padding: 8px 19px 6px 19px;
 }
 .range_1 #main-menu a{
-  padding: 6px 31px;
+  padding: 8px 29px 6px 29px;
 }
 .range_2 #main-menu a{
-  padding: 6px 51px;
+  padding: 8px 49px 6px 49px;
 }
 .range_3 #main-menu a{
-  padding: 6px 71px;
+  padding: 8px 69px 6px 69px;
 }
 
 #highlighted{
@@ -133,13 +138,83 @@
 }
 
 
+/*----------------SIDEBAR-----------------*/
+
+#sidebar-first .region > div{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#sidebar-first h2{
+  font-size: 20px;
+}
+
+.range_1 #sidebar-first iframe{
+  width: 220px;
+  height: 220px;
+}
+.range_2 #sidebar-first iframe{
+  width: 300px;
+  height: 220px;
+}
+.range_3 #sidebar-first iframe{
+  width: 380px;
+  height: 280px;
+}
+
+#block-block-5 label{
+  padding-right: 10px;
+}
+
+#block-block-5 label:last-of-type	{
+  margin-left: 15px;
+}
+
+.range_1 #block-block-5 .form-text{
+  width: 44px;
+}
+.range_2 #block-block-5 .form-text{
+  width: 84px;
+}
+.range_3 #block-block-5 .form-text{
+  width: 124px;
+}
+
+#sidebar-first .form-type-checkbox .option,
+#sidebar-first .form-type-radio .option{
+  float: left;
+  width: auto;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+#sidebar-first .form-radio,
+#sidebar-first .form-checkbox{
+  float: left;
+}
+
+.range_1 #sidebar-first .form-type-checkbox .option,
+.range_1 #sidebar-first .form-type-radio .option{
+  width: 199px !important;
+}
+.range_2 #sidebar-first .form-type-checkbox .option,
+.range_2 #sidebar-first .form-type-radio .option{
+  width: 279px !important;
+}
+.range_3 #sidebar-first .form-type-checkbox .option,
+.range_3 #sidebar-first .form-type-radio .option{
+  width: 359px !important;
+}
+
+
 /*-----------------LIST-------------------*/
 
 .view-announcement .views-row{
   clear: both;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   list-style: none;
   margin-left: 0;
   background: transparent;
@@ -150,7 +225,7 @@
 }
 
 .view-announcement .views-row:hover{
-  background: #eee;
+  background: #e9eced;
   -webkit-transition: background 0s ease-in;
   -moz-transition: background 0s ease-in;
   -o-transition: background 0s ease-in;
@@ -159,26 +234,12 @@
 
 .view-announcement .field-media{
   margin-left: 0;  
-  margin-right: 5px;
+  margin-right: 0;
   padding: 5px;
 }
 
 .view-announcement .field-media img{
-  border: 1px solid #e0e0e0;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.view-announcement .field-media img:hover{
-  -webkit-box-shadow: 0px 0px 3px 0px #aaa;
-  -moz-box-shadow: 0px 0px 5px 0px #aaa;
-  box-shadow: 0px 0px 5px 0px #ccc;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  border: 1px solid #eaeaea;
 }
 
 .view-announcement .field-price{
@@ -261,13 +322,13 @@
   float: none;
 }
 .range_1 .item-list .pager {
-  width: 342px;
+  width: 282px;
 }
 .range_2 .item-list .pager {
   width: 462px;
 }
 .range_3 .item-list .pager {
-  width: 582px;
+  width: 482px;
 }
 
 .item-list .pager li{
@@ -330,6 +391,9 @@
   font-size: 16px;
 }
 
+.field-name-field-description{
+  padding-top: 25px;
+}
 
 
 /*----------------FORMS------------------*/
@@ -377,6 +441,7 @@ label,
   padding-top: 6px;
   padding-bottom: 5px;
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   color: #333333;
   text-align: right;
