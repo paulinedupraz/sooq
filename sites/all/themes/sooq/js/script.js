@@ -13,8 +13,11 @@
                     
                     $('#content').removeClass().addClass('column grid_8');
                     $('.sidebar').removeClass().addClass('column sidebar grid_4');
-                    $('.view-announcement .field-media').removeClass().addClass('field-media grid_2');
-                    
+                    $('.view-announcement .field-media').removeClass().addClass('field-media grid_3');
+                    $('.view-announcement .title').removeClass().addClass('title grid_3');
+                    $('.view-announcement .field-category').removeClass().addClass('field-category grid_3');
+                    $('.view-announcement .field-subcategory').removeClass().addClass('field-subcategory grid_3');
+                    $('.view-announcement .created').removeClass().addClass('created grid_3');
                    
                 ////////// RANGE 2
                 } else if($('html.range_2').length == 1){
@@ -22,6 +25,10 @@
                     $('#content').removeClass().addClass('column grid_8');
                     $('.sidebar').removeClass().addClass('column sidebar grid_4');
                     $('.view-announcement .field-media').removeClass().addClass('field-media grid_2');
+                    $('.view-announcement .title').removeClass().addClass('title grid_4');
+                    $('.view-announcement .field-category').removeClass().addClass('field-category grid_4');
+                    $('.view-announcement .field-subcategory').removeClass().addClass('field-subcategory grid_4');
+                    $('.view-announcement .created').removeClass().addClass('created grid_4');
                     
                     
                 ////////// RANGE 3
