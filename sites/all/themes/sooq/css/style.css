@@ -885,6 +885,10 @@ div.error .form-textarea:focus{
   color: #555;
 }
 
+.range_0 #footer ul{
+  width: 26%;
+  float:left;
+}
 .range_0 #footer ul > a{
   font-size: 20px;
 }
