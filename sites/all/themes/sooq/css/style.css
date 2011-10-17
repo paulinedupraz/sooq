@@ -414,6 +414,7 @@ background: #e9eced;
 .range_0 .view-announcement .field-price{
   position: static;
   text-align: left;
+  float:left;
   font-size: 18px;
   margin-top: -58px;
   margin-bottom: 45px;
@@ -683,7 +684,7 @@ label,
   color: #333333;
 }
 
-.resizable-textarea{
+.resizable{
   width: 300px;
   float: left;
 }
@@ -714,6 +715,7 @@ label,
 .form-submit,
 input[type="button"]{
   cursor: pointer;
+  margin: 0 3px;
   padding: 6px 14px;
   border: 1px solid #dddddd;
   background: #f9f9f9;
