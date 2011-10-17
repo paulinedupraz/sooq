@@ -350,8 +350,7 @@
 }
 
 .view-announcement .views-row:hover{
-  
-background: #e9eced;
+  background: #e9eced;
   -webkit-transition: background 0s ease-in;
   -moz-transition: background 0s ease-in;
   -o-transition: background 0s ease-in;
