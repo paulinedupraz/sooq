@@ -49,7 +49,7 @@
     * Breadcrumb add string 'in' + remove class inline in main-menu
     */
    
-    Drupal.behaviors.breadcrumb = {
+    Drupal.behaviors.general = {
         attach: function(context, settings){
           
             $('#main-menu').removeClass('inline');
@@ -58,8 +58,46 @@
             if(subcategory.length != 0){
                 subcategory.find('.even').append('<span>in</span>');
             }
+            
+            $('.views-row').each(function(){
+                if($('.field-subcategory', this).width() != 0){
+                    $('.field-category', this).css('width', 'auto');
+                }
+            });
+            
         }  
     };
+    
+    
+    /**
+     * Render Announcement list for mobile
+     */
+    
+    Drupal.behaviors.mobile = {
+        attach: function(context, settings){
+            $(window).bind('resize', function(){
+                $('.views-row').each(function(){
+                        $(this).css('padding-top', '0');
+                        $('.title',this).css({
+                            'margin-top': '6px', 
+                            'margin-bottom': '15px'
+                        });
+                    });
+                if($('.range_0').length!=0){
+                    $('.views-row').each(function(){
+                        var offsetTop = $('.title',this).height() + 152 + 21;
+                        $(this).css({'padding-top': $('.title',this).height()+20});
+                        $('.title',this).css({
+                            'margin-top': offsetTop*-1, 
+                            'margin-bottom': offsetTop-$('.title',this).height()
+                        });
+                    });
+                }
+            });
+            $(window).trigger('resize');
+        }
+    }
+
     
     /**
     * Show on the map
@@ -76,34 +114,40 @@
                 
                     $('#sidebar-first').removeClass().addClass('column sidebar grid_8');
                 
-                    $('#block-block-5').hide();
-                    $('#block-block-6').hide();
-                    $('#block-block-7').hide();
+                    $('#block-block-5').addClass('hidden');
+                    $('#block-block-6').addClass('hidden');
+                    $('#block-block-7').addClass('hidden');
                 
                     $('#content').removeClass().addClass('column grid_4');
+                    
+                    $('.view-announcement .title').removeClass('grid_3').addClass('grid_4');
                 
-                    $('#content .field-media').hide();
-                    $('#content .field-price').hide();
-                    $('#content .field-category').hide();
-                    $('#content .field-subcategory').hide();
-                    $('#content .created').hide();
+                    $('.view-announcement .field-media').addClass('hidden');
+                    $('.view-announcement .field-price').addClass('hidden');
+                    $('.view-announcement .field-category').addClass('hidden');
+                    $('.view-announcement .field-subcategory').addClass('hidden');
+                    $('.view-announcement .created').addClass('hidden');
+                    $('.view-announcement .pager').addClass('hidden');
                     
                     largerView = true;
                 
                 } else {
                     $('#sidebar-first').removeClass().addClass('column sidebar grid_4');
                 
-                    $('#block-block-5').show();
-                    $('#block-block-6').show();
-                    $('#block-block-7').show();
+                    $('#block-block-5').removeClass('hidden');
+                    $('#block-block-6').removeClass('hidden');
+                    $('#block-block-7').removeClass('hidden');
                 
                     $('#content').removeClass().addClass('column grid_8');
+                    
+                    $('.view-announcement .title').removeClass('grid_4').addClass('grid_3');
                 
-                    $('#content .field-media').show();
-                    $('#content .field-price').show();
-                    $('#content .field-category').show();
-                    $('#content .field-subcategory').show();
-                    $('#content .created').show();
+                    $('.view-announcement .field-media').removeClass('hidden');
+                    $('.view-announcement .field-price').removeClass('hidden');
+                    $('.view-announcement .field-category').removeClass('hidden');
+                    $('.view-announcement .field-subcategory').removeClass('hidden');
+                    $('.view-announcement .created').removeClass('hidden');
+                    $('.view-announcement .pager').removeClass('hidden');
                     
                     largerView = false;
                 }
