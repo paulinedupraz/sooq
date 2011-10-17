@@ -223,6 +223,24 @@
   width: 354px !important;
 }
 
+.range_0 #sidebar-first iframe{
+  width: 100%;
+  height: 250px;
+}
+.range_0 .show-map{
+  display: none;
+}
+.range_0 #sidebar-first .form-text{
+  width: 30%;
+}
+.range_0 #sidebar-first .form-item.form-type-radio{
+  overflow: hidden;
+  margin-right: 13px;
+  margin-bottom: -0.1em;
+  float: left;
+}
+.range_0 #sidebar-first .form-item.form-type-radio .option{
+  width: auto !important;
 }
 
 /*------------SHOW-ON-THE-MAP-------------*/
