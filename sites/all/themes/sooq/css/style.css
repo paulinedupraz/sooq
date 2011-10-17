@@ -62,13 +62,17 @@
 .range_0 #main-menu{
   margin-top: 5px;
 }
+.range_0 #main-menu .active{
+  font-weight: bold;
+}
 .range_0 #main-menu .active,
 .range_0 #main-menu a:hover{
   background: transparent;
 }
 .range_0 #main-menu a{
   background: transparent;
-  padding: 8px 19px 6px 19px;
+  font-size: 16px;
+  padding: 8px 20px 6px 20px;
 }
 .range_1 #main-menu a{
   padding: 8px 29px 6px 29px;
@@ -112,16 +116,20 @@
 .range_0 #highlighted{
   margin: 0;
   background: transparent;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-left: 23px;
 }
 .range_0 #highlighted label{
   width: 40px;
+  margin-top: 0;
 }
 .range_0 #highlighted .form-text{
   width: 315px;
   float: none;
   margin-bottom: 5px;
+}
+.range_0 #highlighted p{
+  margin-bottom: 0;
 }
 .range_1 #highlighted label{
   padding-right: 15px;
