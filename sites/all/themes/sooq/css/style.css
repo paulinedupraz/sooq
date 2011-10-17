@@ -212,15 +212,17 @@
 
 .range_1 #sidebar-first .form-type-checkbox .option,
 .range_1 #sidebar-first .form-type-radio .option{
-  width: 199px !important;
+  width: 194px !important;
 }
 .range_2 #sidebar-first .form-type-checkbox .option,
 .range_2 #sidebar-first .form-type-radio .option{
-  width: 279px !important;
+  width: 274px !important;
 }
 .range_3 #sidebar-first .form-type-checkbox .option,
 .range_3 #sidebar-first .form-type-radio .option{
-  width: 359px !important;
+  width: 354px !important;
+}
+
 }
 
 /*------------SHOW-ON-THE-MAP-------------*/
