@@ -246,6 +246,7 @@
 /*------------SHOW-ON-THE-MAP-------------*/
 
 #sidebar-first.grid_8{
+  margin-top: 38px;
   margin-left: -10px;
 }
 
@@ -300,6 +301,12 @@
   display: block;
   padding: 15px 5px 15px 10px;
   width: 100%;
+}
+
+#content.grid_4 .view-announcement .field-price{
+  position: static;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 #sidebar-first.grid_8 iframe{
@@ -389,7 +396,8 @@
   font-style: italic;
   color: #555;
   text-align: right;
-  margin: 5px 0 0 0;
+  float: right;
+  margin: -20px 0 0 0;
 }
 
 .view-announcement .field-media div,
@@ -401,6 +409,16 @@
 .view-announcement .field-category.grid_3,
 .view-announcement .field-subcategory.grid_3{
   margin-bottom: 5px;
+}
+
+.view-announcement .field-category .field-content,
+.view-announcement .field-subcategory .field-content{
+  width: auto;
+  background: #c1ced0;
+  padding: 2px 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .view-announcement .field-subcategory.grid_3{
@@ -441,6 +459,9 @@
 .range_1 .view-announcement .field-price{
   font-size: 15px;
 }
+.range_1 .view-announcement .created{
+  margin-top: -18px;
+}
 .range_2 .view-announcement .title{
   font-size: 16px;
   margin-right: 158px;
@@ -448,9 +469,11 @@
 
 .range_2 .view-announcement .field-category,
 .range_2 .view-announcement .field-subcategory{
-  font-size: 14px;
+  font-size: 13px;
 }
-
+.range_2 .view-announcement .field-subcategory{
+  max-width: 160px;
+}
 
 .range_3 .view-announcement .title{
   font-size: 20px;
@@ -459,6 +482,7 @@
 .range_3 .view-announcement .field-category,
 .range_3 .view-announcement .field-subcategory{
   font-size: 15px;
+ 
 }
 
 .range_1 .view-announcement .created{
@@ -469,6 +493,7 @@
 }
 .range_3 .view-announcement .created{
   font-size: 13px;
+  margin-top: 2px;
 }
 
 .item-list .pager{

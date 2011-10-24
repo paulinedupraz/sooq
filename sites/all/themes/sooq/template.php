@@ -9,6 +9,6 @@ function sooq_preprocess_views_view_fields(&$vars) {
   $vars['fields']['title']->class .= ' grid_3';
   $vars['fields']['field_category']->class .= ' grid_3';
   $vars['fields']['field_subcategory']->class .= ' grid_3';
-  $vars['fields']['created']->class .= ' grid_3 suffix_2';
+  $vars['fields']['created']->class .= ' grid_2';
   $vars['fields']['field_price']->class .= ' grid_2';
 }
