@@ -397,7 +397,7 @@
   color: #555;
   text-align: right;
   float: right;
-  margin: -20px 0 0 0;
+  margin: 0 10px 0 0;
 }
 
 .view-announcement .field-media div,
@@ -406,9 +406,10 @@
   width: inherit;
 }
 
-.view-announcement .field-category.grid_3,
-.view-announcement .field-subcategory.grid_3{
+.view-announcement .field-category,
+.view-announcement .field-subcategory{
   margin-bottom: 5px;
+  margin-right: 0;
 }
 
 .view-announcement .field-category .field-content,
@@ -419,6 +420,11 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.view-announcement .field-category .field-content:hover,
+.view-announcement .field-subcategory .field-content:hover{
+  background: #b0bcbe;
 }
 
 .view-announcement .field-subcategory.grid_3{
@@ -433,21 +439,34 @@
   text-align: left;
   float:left;
   font-size: 18px;
-  margin-top: -58px;
+  margin-top: -68px;
   margin-bottom: 45px;
 }
 .range_0 .view-announcement .title{
-  float: none;
+  margin-bottom: 5px;
+}
+.range_0 .view-announcement .field-media{
+  float: left;
 }
 .range_0 .view-announcement .field-category,
 .range_0 .view-announcement .field-subcategory{
   float: left;
-  margin-top: 22px;
+  margin-top: 30px;
 }
 .range_0 .view-announcement .created{
   text-align: left;
-  clear:both;
   margin-top: 3px;
+  float: left;
+  margin-left: 10px;
+}
+
+.range_0 .view-announcement.clearleft .field-price{
+  clear:both;
+  margin-top: -78px;
+}
+.range_0 .view-announcement.clearleft .created{
+  margin-bottom: 10px;
+  clear:both;
   margin-left: 10px;
 }
 
@@ -459,8 +478,12 @@
 .range_1 .view-announcement .field-price{
   font-size: 15px;
 }
+.range_1 .view-announcement .field-category,
+.range_1 .view-announcement .field-subcategory{
+  font-size: 12px;
+}
 .range_1 .view-announcement .created{
-  margin-top: -18px;
+  margin-top: 3px;
 }
 .range_2 .view-announcement .title{
   font-size: 16px;
@@ -474,6 +497,9 @@
 .range_2 .view-announcement .field-subcategory{
   max-width: 160px;
 }
+.range_2 .view-announcement .created{
+  margin-top: 3px;
+}
 
 .range_3 .view-announcement .title{
   font-size: 20px;
@@ -481,12 +507,12 @@
 }
 .range_3 .view-announcement .field-category,
 .range_3 .view-announcement .field-subcategory{
-  font-size: 15px;
+  font-size: 13px;
  
 }
 
 .range_1 .view-announcement .created{
-  font-size: 11px;
+   font-size: 11px;
 }
 .range_2 .view-announcement .created{
   font-size: 12px;

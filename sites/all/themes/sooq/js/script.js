@@ -10,6 +10,13 @@
         attach: function(context, settings){
           
             $('#main-menu').removeClass('inline');
+            
+            $('.field-subcategory').each(function(){
+                if($(this).find('.field-content').width()==0){
+                    $(this).hide();
+                }
+            });
+            
           
             var subcategory = $('.field-name-field-subcategory');
             if(subcategory.length != 0){
@@ -33,21 +40,26 @@
     Drupal.behaviors.mobile = {
         attach: function(context, settings){
             $(window).bind('resize', function(){
-                $('.views-row').each(function(){
-                        $(this).css('padding-top', '0');
-                        $('.title',this).css({
-                            'margin-top': '6px', 
-                            'margin-bottom': '15px'
-                        });
-                    });
+               
                 if($('.range_0').length!=0){
                     $('.views-row').each(function(){
-                        var offsetTop = $('.title',this).height() + 152 + 21;
-                        $(this).css({'padding-top': $('.title',this).height()+20});
-                        $('.title',this).css({
-                            'margin-top': offsetTop*-1, 
-                            'margin-bottom': offsetTop-$('.title',this).height()
-                        });
+                        var widthImg = 292;
+                        var widthContent = $(this).width() - widthImg - 20;
+                        if(widthContent > 292){
+                            $('.view-announcement').removeClass('clearleft');
+                            $(this).find('.title').css('width', widthContent);
+                            $(this).find('.created').css('width', widthContent);
+                        } else {
+                            var offsetTop = $('.title',this).height() + 152 + 21;
+                            $(this).css({'padding-top': $('.title',this).height()+20});
+                            $('.view-announcement').addClass('clearleft');
+                            $(this).find('.title').css({
+                                'width': 292,
+                                'margin-top': offsetTop*-1,
+                                'margin-bottom': offsetTop-$('.title',this).height()
+                            });
+                            $(this).find('.created').css('width', 292);
+                        }
                     });
                 }
             });
