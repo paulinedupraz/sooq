@@ -16,7 +16,6 @@
                     $(this).hide();
                 }
             });
-            
           
             var subcategory = $('.field-name-field-subcategory');
             if(subcategory.length != 0){
@@ -29,6 +28,9 @@
                 }
             });
             
+            if($('.pager').length!=0){
+                $('.pager').addClass('grid_5 prefix_3');
+            }
         }  
     };
     
@@ -46,7 +48,7 @@
                         var widthImg = 292;
                         var widthContent = $(this).width() - widthImg - 20;
                         if(widthContent > 292){
-                            $('.view-announcement').removeClass('clearleft');
+                            $('.view-announcement').removeClass('clearleft');   
                             $(this).find('.title').css('width', widthContent);
                             $(this).find('.created').css('width', widthContent);
                         } else {
@@ -85,15 +87,15 @@
                     $('#sidebar-first').removeClass().addClass('column sidebar grid_8');
                     
                     $('#block-block-4 h2').addClass('hidden');
-                    $('#block-block-5').addClass('hidden');
+                    /*$('#block-block-5').addClass('hidden');
                     $('#block-block-6').addClass('hidden');
-                    $('#block-block-7').addClass('hidden');
+                    $('#block-block-7').addClass('hidden');*/
                 
                     $('#content').removeClass().addClass('column grid_4');
                     
                     $('.view-announcement .title').removeClass('grid_3').addClass('grid_4');
                 
-                    $('.view-announcement .field-media').addClass('hidden');
+                    $('.view-announcement .field-image-file').addClass('hidden');
                     $('.view-announcement .field-category').addClass('hidden');
                     $('.view-announcement .field-subcategory').addClass('hidden');
                     $('.view-announcement .created').addClass('hidden');
@@ -107,15 +109,15 @@
                     $('#sidebar-first').removeClass().addClass('column sidebar grid_4');
                 
                     $('#block-block-4 h2').removeClass('hidden');
-                    $('#block-block-5').removeClass('hidden');
+                    /*$('#block-block-5').removeClass('hidden');
                     $('#block-block-6').removeClass('hidden');
-                    $('#block-block-7').removeClass('hidden');
+                    $('#block-block-7').removeClass('hidden');*/
                 
                     $('#content').removeClass().addClass('column grid_8');
                     
                     $('.view-announcement .title').removeClass('grid_4').addClass('grid_3');
                 
-                    $('.view-announcement .field-media').removeClass('hidden');
+                    $('.view-announcement .field-image-file').removeClass('hidden');
                     $('.view-announcement .field-category').removeClass('hidden');
                     $('.view-announcement .field-subcategory').removeClass('hidden');
                     $('.view-announcement .created').removeClass('hidden');

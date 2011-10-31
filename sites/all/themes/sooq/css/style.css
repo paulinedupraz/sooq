@@ -522,22 +522,13 @@
   margin-top: 2px;
 }
 
-.item-list .pager{
+.view-announcement .item-list .pager{
   margin-top: 15px;
   float: right;
 }
 
-.range_0 .item-list .pager {
+.range_0 .view-announcement .item-list .pager {
   float: none;
-}
-.range_1 .item-list .pager {
-  width: 282px;
-}
-.range_2 .item-list .pager {
-  width: 462px;
-}
-.range_3 .item-list .pager {
-  width: 482px;
 }
 
 .item-list .pager li{
